@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import classes from "./components/GameList.module.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [searchValue, setSearchValue] = useState("");
+  const dbData = {
+    game: [
+      {
+        id: "01",
+        name: "League of Legends",
+        platform: "PC",
+        release: "27th October 2009",
+        company: "Riot Games",
+        cover: "https://thumbnails.pcgamingwiki.com/4/40/League_of_Legends_-_cover.jpg/450px-League_of_Legends_-_cover.jpg",
+      },
+      {
+        id: "02",
+        name: "Fortnite",
+        platform: "PC",
+        release: "21st July 2017",
+        company: "Epic Games",
+        cover: "https://m.media-amazon.com/images/M/MV5BOGY3ZjM3NWUtMWNiMi00OTcwLWIxN2UtMjNhMDhmZWRlNzRkXkEyXkFqcGdeQXVyNjMxNzQ2NTQ@._V1_.jpg",
+      },
+    ],
+  };
+
+  function inputHandler(e) {
+    setSearchValue(e.target.value.toLowerCase());
+  }
+  const filteredGames = dbData.game.filter((item) => {
+
+    return (
+      item.name.toLowerCase().includes(searchValue) ||
+      item.platform.toLowerCase().includes(searchValue) ||
+      item.release.toLowerCase().includes(searchValue) ||
+      item.company.toLowerCase().includes(searchValue)
+    );
+  });
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>Game Reminder</h1>
+
+      <input
+        placeholder="Search for your game..."
+        onChange={inputHandler}
+        value={searchValue}
+      />
+
+      <div className={classes.gamelist}>
+        {filteredGames.map((game) => (
+          <div key={game.id} className={classes.gameitem}>
+          <img src={game.cover}></img>
+            <h2>{game.name}</h2>
+            <p>Platform: {game.platform}</p>
+            <p>Release Date: {game.release}</p>
+            <p>Company: {game.company}</p>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
