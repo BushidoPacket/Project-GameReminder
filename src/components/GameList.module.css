@@ -1,6 +1,8 @@
 .gamelist {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameitem {
@@ -11,4 +13,6 @@
 
 .gameitem img {
     height: 350px;
+    max-width: 240px;
+    border-radius: 25px;
 }
