@@ -22,7 +22,7 @@ fetch('test_database.json')
       });
 
       // Display the results
-      resultsContainer.innerHTML = "";
+/*      resultsContainer.innerHTML = "";
 
       filteredData.forEach(function (item) {
         const li = document.createElement("li");
@@ -32,12 +32,25 @@ fetch('test_database.json')
           <strong>Platform:</strong> ${item.platform}<br>
           <strong>Release:</strong> ${item.release}<br>
           <strong>Company:</strong> ${item.company}<br>
-          <hr>
         `;
+        li.classList.add("searchList");
         resultsContainer.appendChild(li);
       });
     });
   })
+  */
+  resultsContainer.innerHTML = "";
+
+  filteredData.forEach(function (item) {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <img scr="game_covers/${item.id}.jpg" alt="${item.name}"><br>
+      `;
+    li.classList.add("searchList");
+    resultsContainer.appendChild(li);
+  });
+});
+})
   .catch(error => {
     // Handle any error that occurred during the fetch
     console.error('Error:', error);

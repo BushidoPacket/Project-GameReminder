@@ -1,11 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/capture-it');
 
 :root{
+    /* Colors */
     --mainBGcolor: #252525;
     --mainBGshadeColor: #000000;
     --mainFGcolor: #ffffff;
     --mainTextColor: #ffffff;
     --textGRcolor: #ab2020;
+    /* Main sizes */
+    --mainWidth: 70vw;
+    --mainHeight: 100vw;
 }
 
 body{
@@ -14,47 +18,12 @@ body{
 
 .centeredPage{
     display: flexbox;
-    width: 80vw;
-    height: 100vw;
+    width: var(--mainWidth);
+    height: var(--mainHeight);
     margin: auto;
     justify-content: center;
     align-items: center;
     background-color: var(--mainBGshadeColor);
-}
-
-.searchBar{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid;
-    border-width: 2px;
-    border-radius: 15px;
-    border-color: var(--mainTextColor);
-    width: 60vw;
-    height: 3vw;
-    text-align: center;
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 520;
-    font-family: 'Capture it', sans-serif;
-    letter-spacing: 2px;
-    background-color: #404040;
-}
-
-.textarea:focus, input:focus{
-    outline: none;
-}
-
-#results{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--mainTextColor);
-    padding-left: 30vw;
-}
-
-strong{
-    color: yellow;
 }
 
 .textMain{
@@ -84,7 +53,7 @@ strong{
     text-align: center;
     margin: auto;
     height: 90px;
-    width: 80vw;
+    width: var(--mainWidth);
     justify-content: center;
     align-items: center;
 }
@@ -104,7 +73,43 @@ strong{
     text-align: center;
     margin: auto;
     height: 50px;
-    width: 80vw;
+    width: var(--mainWidth);
     justify-content: center;
     align-items: center;
+}
+
+.searchBar{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: var(--mainTextColor);
+    width: 50vw;
+    height: 3vw;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: 520;
+    font-family: 'Capture it', sans-serif;
+    letter-spacing: 2px;
+    background-color: #404040;
+}
+
+.textarea:focus, input:focus{
+    outline: none;
+}
+
+#results{
+    display: block;
+    margin: auto;
+    color: var(--mainTextColor);
+    justify-content: center;
+}
+
+.searchList{
+    display: inline-block;
+    border-radius: 8px;
+    width: 150px;
 }
