@@ -1,14 +1,35 @@
-.gamelist {
+.gameList {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.gameitem {
-    flex: 1 0 25%;
-    margin: 10px;
-    padding: 10px;
+.gameItem {
+    flex: space-evenly;
+    margin: 0px 40px;
+    padding-top: 60px;
+    padding-inline: 10px;
+    padding-bottom: 0px;
+    text-align: center;
 }
 
-.gameitem img {
+.gameItem img {
     height: 350px;
+    max-width: 240px;
+    border-radius: 25px;
+    border: solid 2px;
+    border-color: var(--mainFGcolor);
+}
+
+.gameItem h2 {
+    margin-top: 5px;
+    color: var(--mainTextColor);
+}
+
+.gameItem p {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
 }

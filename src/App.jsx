@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import classes from "./components/GameList.module.css";
+import classes from "./components/gameList.module.css";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -40,24 +40,41 @@ function App() {
 
   return (
     <>
-      <h1>Game Reminder</h1>
+      <div className="centeredPage">
 
-      <input
-        placeholder="Search for your game..."
-        onChange={inputHandler}
-        value={searchValue}
-      />
+        <div className="mainDiv">
+          <h1 className="textGR">G</h1>
+          <h1 className="textMain">ame &nbsp;</h1>
+          <h1 className="textGR">R</h1>
+          <h1 className="textMain">eminder</h1>
+        </div>
 
-      <div className={classes.gamelist}>
-        {filteredGames.map((game) => (
-          <div key={game.id} className={classes.gameitem}>
-          <img src={game.cover}></img>
-            <h2>{game.name}</h2>
-            <p>Platform: {game.platform}</p>
-            <p>Release Date: {game.release}</p>
-            <p>Company: {game.company}</p>
-          </div>
-        ))}
+        <div class="mainDivSecond">
+            <h2 class="textMainSecond">Recall the gameplay and the storyline of the game</h2>
+        </div>
+
+        <input
+          id="searchBar"
+          className="searchBar"
+          type="text"
+          spellCheck="false"
+          placeholder="Search for your game..."
+          onChange={inputHandler}
+          value={searchValue}
+        />
+
+        <div className={classes.gameList}>
+          {filteredGames.map((game) => (
+            <div key={game.id} className={classes.gameItem}>
+            <img src={game.cover}></img>
+              <h2>{game.name}</h2>
+              <p>Platform: {game.platform}</p>
+              <p>Release Date: {game.release}</p>
+              <p>Company: {game.company}</p>
+            </div>
+          ))}
+        </div>
+
       </div>
     </>
   );
