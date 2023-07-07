@@ -3,7 +3,7 @@
 :root{
   /* Colors */
   --mainBGcolor: #252525;
-  --mainBGshadeColor: #000000;
+  --mainBGshadeColor: rgba(0, 0, 0, 0.96);
   --mainFGcolor: #ffffff;
   --mainTextColor: #ffffff;
   --textGRcolor: #ab2020;
@@ -13,7 +13,10 @@
 }
 
 body{
-  background-color: var(--mainBGcolor);
+  /*background-color: var(--mainBGcolor);*/
+  background-image: url("https://wallpaperset.com/w/full/f/6/c/211453.jpg");
+  background-size: 100vw;
+  background-attachment: fixed;
 }
 
 .centeredPage{
@@ -25,7 +28,7 @@ body{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background-color: var(--mainBGshadeColor);
+  background-color: var(--mainBGshadeColor);  
 }
 
 .textMain{
@@ -36,7 +39,7 @@ body{
   font-family: 'Capture it', sans-serif;
   color: var(--mainTextColor);
   letter-spacing: 2px;
-  text-decoration: 3px underline double var(--textGRcolor);
+  text-decoration: 4px underline double var(--textGRcolor);
 }
 
 .textGR{
@@ -47,7 +50,7 @@ body{
   font-family: 'Capture it', sans-serif;
   color: var(--textGRcolor);
   letter-spacing: 2px;
-  text-decoration: 3px underline double var(--textGRcolor);
+  text-decoration: 4px underline double var(--textGRcolor);
 }
 
 .mainDiv{

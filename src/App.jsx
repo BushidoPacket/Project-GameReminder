@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import classes from "./components/GameList.module.css";
+import classes from "./components/gameList.module.css";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -63,9 +63,9 @@ function App() {
           value={searchValue}
         />
 
-        <div className={classes.gamelist}>
+        <div className={classes.gameList}>
           {filteredGames.map((game) => (
-            <div key={game.id} className={classes.gameitem}>
+            <div key={game.id} className={classes.gameItem}>
             <img src={game.cover}></img>
               <h2>{game.name}</h2>
               <p>Platform: {game.platform}</p>
