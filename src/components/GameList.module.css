@@ -1,5 +1,6 @@
 .gameList {
     display: flex;
+    width: var(--mainWidth);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -7,7 +8,7 @@
 }
 
 .gameItem {
-    flex: space-evenly;
+    flex: 0 0 25%;
     margin: 0px 40px;
     padding-top: 60px;
     padding-inline: 10px;
@@ -16,8 +17,9 @@
 }
 
 .gameItem img {
-    height: 350px;
-    max-width: 240px;
+    height: 280px;
+    max-width: 200px;
+    object-fit: cover;
     border-radius: 25px;
     border: solid 2px;
     border-color: var(--mainFGcolor);
