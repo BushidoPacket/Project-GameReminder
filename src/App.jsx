@@ -85,8 +85,8 @@ function App() {
           <h1 className="textMain">eminder</h1>
         </div>
 
-        <div class="mainDivSecond">
-            <h2 class="textMainSecond">Recall the gameplay and the storyline of the game</h2>
+        <div className="mainDivSecond">
+            <h2 className="textMainSecond">Recall the gameplay and the storyline of the game</h2>
         </div>
 
         <input
