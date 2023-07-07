@@ -6,7 +6,8 @@
           "name":"League of Legends",
           "platform": "PC",
           "release": "27th October 2009",
-          "company": "Riot Games"
+          "company": "Riot Games",
+          "cover": "https://thumbnails.pcgamingwiki.com/4/40/League_of_Legends_-_cover.jpg/450px-League_of_Legends_-_cover.jpg"
        },
      
        {
@@ -14,7 +15,8 @@
           "name":"Fortnite",
           "platform": "PC",
           "release": "21st July 2017",
-          "company": "Epic Games"
+          "company": "Epic Games",
+          "cover": "https://m.media-amazon.com/images/M/MV5BOGY3ZjM3NWUtMWNiMi00OTcwLWIxN2UtMjNhMDhmZWRlNzRkXkEyXkFqcGdeQXVyNjMxNzQ2NTQ@._V1_.jpg"
        },
      
        {
@@ -22,7 +24,8 @@
           "name":"Minecraft",
           "platform": "xx",
           "release": "xx",
-          "company": "xx"
+          "company": "xx",
+          "cover": "null"
        },
      
        {
@@ -30,7 +33,8 @@
           "name":"Call of Duty",
           "platform": "xx",
           "release": "xx",
-          "company": "xx"
+          "company": "xx",
+          "cover": "null"
        },
      
        {
@@ -38,7 +42,8 @@
           "name":"Legends of Zelda",
           "platform": "xx",
           "release": "xx",
-          "company": "xx"
+          "company": "xx",
+          "cover": "null"
        },
      
        {
@@ -46,7 +51,8 @@
           "name":"Overwatch 2",
           "platform": "xx",
           "release": "xx",
-          "company": "xx"
+          "company": "xx",
+          "cover": "null"
        }
     ]
  }
