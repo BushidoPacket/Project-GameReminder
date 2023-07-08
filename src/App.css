@@ -3,7 +3,7 @@
 :root{
   /* Colors */
   --mainBGcolor: #252525;
-  --mainBGshadeColor: rgba(0, 0, 0, 0.96);
+  --mainBGshadeColor: rgba(0, 0, 0, 0.92);
   --mainFGcolor: #ffffff;
   --mainTextColor: #ffffff;
   --textGRcolor: #ab2020;
@@ -14,7 +14,7 @@
 
 body{
   /*background-color: var(--mainBGcolor);*/
-  background-image: url("https://initiate.alphacoders.com/images/131/cropped-1920-1080-1316538.png?7436");
+  background-image: url("https://cdn.wallpapersafari.com/84/29/uchbAr.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
