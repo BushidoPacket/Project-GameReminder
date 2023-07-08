@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./GameList.module.css";
-import games from "./games.json";
-
+import games from "../database.json";
 
 export const GameList = ({ search }) => {
   const [gameData, setGameData] = useState([]);
@@ -21,9 +20,9 @@ export const GameList = ({ search }) => {
 
   return (
     <>
-      <div className={classes.gamelist}>
+      <div className={classes.gameList}>
         {filteredGames.map((game) => (
-          <div key={game.id} className={classes.gameitem}>
+          <div key={game.id} className={classes.gameItem}>
             <img src={game.cover}></img>
             <h2>{game.name}</h2>
             <p>Platform: {game.platform}</p>
