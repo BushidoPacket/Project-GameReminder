@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .gameItem {
@@ -12,8 +13,15 @@
     margin: 0px 40px;
     padding-top: 60px;
     padding-inline: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     text-align: center;
+    transform:scale(1, 1);
+    transition: 0.2s;
+
+    &:hover {
+        transform:scale(1.225, 1.225);
+        z-index: 1;
+    }
 }
 
 .gameItem img {
@@ -23,6 +31,10 @@
     border-radius: 25px;
     border: solid 2px;
     border-color: var(--mainFGcolor);
+
+    &:hover {
+        border: dashed 2px;
+    }
 }
 
 .gameItem h2 {

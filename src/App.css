@@ -9,7 +9,7 @@
   --textGRcolor: #ab2020;
   /* Main sizes */
   --mainWidth: 70vw;
-  /*--mainHeight: 100vw;*/
+  --mainHeight: 100vw;
 }
 
 body{
@@ -23,11 +23,12 @@ body{
   display: flexbox;
   position: relative;
   width: var(--mainWidth);
+  min-height: var(--mainHeight);
   left: 15vw;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background-color: var(--mainBGshadeColor);  
+  background-color: var(--mainBGshadeColor);
 }
 
 .textMain{
