@@ -132,4 +132,14 @@ body{
 
 .searchBar:focus, input:focus{
   outline: none;
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 520;
+  font-family: 'Capture it', sans-serif;
+  letter-spacing: 2px;
+  background-color: #404040;
+}
+
+.searchBar:focus, input:focus{
+  outline: none;
 }

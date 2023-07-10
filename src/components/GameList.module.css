@@ -1,6 +1,7 @@
 .gameList {
     display: flex;
     width: var(--mainWidth);
+    width: var(--mainWidth);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -16,11 +17,11 @@
     padding-bottom: 50px;
     text-align: center;
 
-    transform:scale(1, 1);
+    transform: scale(1, 1);
     transition: 0.2s;
 
     &:hover {
-        transform:scale(1.225, 1.225);
+        transform: scale(1.225, 1.225);
         z-index: 1;
     }
 }
@@ -41,6 +42,11 @@
 .gameItem h2 {
     margin-top: 5px;
     color: var(--mainTextColor);
+
+    .gameItem h2 {
+        margin-top: 5px;
+        color: var(--mainTextColor);
+    }
 }
 
 .gameItem p {
