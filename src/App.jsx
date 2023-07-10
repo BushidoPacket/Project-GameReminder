@@ -84,11 +84,11 @@ function App() {
           <h1 className="textGR">R</h1>
           <h1 className="textMain">eminder</h1>
         </div>
-
+        
         <div className="mainDivSecond">
             <h2 className="textMainSecond">Recall the gameplay and the storyline of the game</h2>
         </div>
-
+        
         <input
           id="searchBar"
           className="searchBar"

@@ -2,14 +2,29 @@
 
 :root{
   /* Colors */
+  /* Main sizes */
+  --mainWidth: 70vw;
+  --mainHeight: 100vw;
+}
+
+:root.dark{
   --mainBGcolor: #252525;
   --mainBGshadeColor: rgba(0, 0, 0, 0.92);
   --mainFGcolor: #ffffff;
   --mainTextColor: #ffffff;
   --textGRcolor: #ab2020;
-  /* Main sizes */
-  --mainWidth: 70vw;
-  --mainHeight: 100vw;
+  --passiveScrollBar: #860000;
+  --hoverScrollBar: #ff0000;
+}
+
+:root.light{
+  --mainBGcolor: #252525;
+  --mainBGshadeColor: rgba(255, 255, 255, 0.6);
+  --mainFGcolor: #000000;
+  --mainTextColor: #000000;
+  --textGRcolor: #ab2020;
+  --passiveScrollBar: #860000;
+  --hoverScrollBar: #ff0000;
 }
 
 body{
@@ -19,8 +34,26 @@ body{
   background-attachment: fixed;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--mainBGshadeColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--passiveScrollBar);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hoverScrollBar);
+}
+
+
 .centeredPage{
-  display: flexbox;
+  display: block;
   position: relative;
   width: var(--mainWidth);
   min-height: var(--mainHeight);
@@ -33,34 +66,29 @@ body{
 
 .textMain{
   display: flex;
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 520;
-  font-family: 'Capture it', sans-serif;
   color: var(--mainTextColor);
-  letter-spacing: 2px;
-  text-decoration: 4px underline double var(--textGRcolor);
 }
 
 .textGR{
   display: flex;
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 520;
-  font-family: 'Capture it', sans-serif;
   color: var(--textGRcolor);
-  letter-spacing: 2px;
-  text-decoration: 4px underline double var(--textGRcolor);
 }
 
 .mainDiv{
   display: flex;
   text-align: center;
   margin: auto;
-  height: 90px;
+  height: 100px;
   width: var(--mainWidth);
   justify-content: center;
   align-items: center;
+
+  text-align: center;
+  font-weight: 520;
+  font-family: 'Capture it', sans-serif;
+  font-size: 50px;
+  letter-spacing: 4px;
+  text-decoration: 4px underline double var(--textGRcolor);
 }
 
 .textMainSecond{

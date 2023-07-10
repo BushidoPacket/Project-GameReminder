@@ -15,6 +15,7 @@
     padding-inline: 10px;
     padding-bottom: 50px;
     text-align: center;
+
     transform:scale(1, 1);
     transition: 0.2s;
 
@@ -46,4 +47,5 @@
     font-size: 12px;
     margin: 0px;
     padding: 0px;
+    color: var(--mainTextColor);
 }
