@@ -55,3 +55,9 @@
     padding: 0px;
     color: var(--mainTextColor);
 }
+
+.reactLink {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
