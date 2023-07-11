@@ -29,7 +29,7 @@
 
 body{
   /*background-color: var(--mainBGcolor);*/
-  background-image: url("https://cdn.wallpapersafari.com/84/29/uchbAr.jpg");
+  background-image: url("../graphic/background.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -96,6 +96,8 @@ body{
   background-image: url("../graphic/switch-icon-light.png");
   background-size: contain;
   border-radius: 50%;
+  border: 0px;
+  outline: none;
 }
 
 .textMain{
