@@ -74,6 +74,8 @@ export const Home = () => {
 
   return (
     <>
+      <div className="leftSideContainer"></div>
+
       <div className="centeredPage">
 
         <div className="navBar">
@@ -112,6 +114,8 @@ export const Home = () => {
 
         <GameList search={searchValue} />
       </div>
+
+      <div className="rightSideContainer"></div>
     </>
   );
 };

@@ -55,7 +55,7 @@ body{
 .centeredPage{
   display: block;
   position: relative;
-  width: var(--mainWidth);
+  min-width: var(--mainWidth);
   min-height: var(--mainHeight);
   left: 15vw;
   margin: 0 auto;
@@ -115,7 +115,7 @@ body{
   text-align: center;
   margin: auto;
   height: 100px;
-  width: var(--mainWidth);
+  width: 1000px;
   justify-content: center;
   align-items: center;
 
