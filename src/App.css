@@ -29,7 +29,7 @@
 
 body{
   /*background-color: var(--mainBGcolor);*/
-  background-image: url("https://cdn.wallpapersafari.com/84/29/uchbAr.jpg");
+  background-image: url("../graphic/background.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -67,27 +67,26 @@ body{
 .navBar{
   display: grid;
   grid-template-columns: repeat(60, [col-start]);
-  width: var(--mainWidth);
+  max-width: var(--mainWidth);
   height: 50px;
   background-color: var(--mainBGcolor);
-  border: solid 1px;
+  border: solid 4px;
   border-radius: 4px;
   border-color: var(--mainBGshadeColor);
   align-items: center;
+  border-radius: 15px;
 }
 
 .navBarFirst{
   grid-column: 1;
   width: 1px;
   height: 50px;
-  background-color: var(--mainBGcolor);
 }
 
 .navBarLast{
   grid-column: 60;
   width: 1px;
   height: 50px;
-  background-color: var(--mainBGcolor);
 }
 
 .navBar > #themeButton{
@@ -97,6 +96,8 @@ body{
   background-image: url("../graphic/switch-icon-light.png");
   background-size: contain;
   border-radius: 50%;
+  border: 0px;
+  outline: none;
 }
 
 .textMain{
