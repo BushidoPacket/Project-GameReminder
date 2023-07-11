@@ -36,6 +36,7 @@
 
     &:hover {
         border: dashed 2px;
+        border-color: var(--mainFGcolor);
     }
 }
 
