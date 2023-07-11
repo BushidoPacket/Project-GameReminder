@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { GameList } from "../components/GameList";
+import { changeTheme } from "../theme_handler";
 
 export const Home = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -74,6 +75,17 @@ export const Home = () => {
   return (
     <>
       <div className="centeredPage">
+
+        <div className="navBar">
+
+          <div className="navBarFirst"></div>
+
+          <button id="themeButton" onClick={changeTheme}></button>
+
+          <div className="navBarLast"></div>
+
+        </div>
+
         <div className="mainDiv">
           <h1 className="textGR">G</h1>
           <h1 className="textMain">ame &nbsp;</h1>
@@ -93,6 +105,7 @@ export const Home = () => {
           type="text"
           spellCheck="false"
           placeholder="Search for your game..."
+          autoComplete="off"
           onChange={inputHandler}
           value={searchValue}
         />
