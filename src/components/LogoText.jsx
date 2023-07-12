@@ -13,10 +13,9 @@ export const LogoText = () => {
       </div>
 
       <div className="mainDiv">
-        <h1 className="textGR">G</h1>
-        <h1 className="textMain">ame &nbsp;</h1>
-        <h1 className="textGR">R</h1>
-        <h1 className="textMain">eminder</h1>
+        <h1 className="textMain">
+          <span className="textGR">G</span>ame &nbsp;<span className="textGR">R</span>eminder
+        </h1>
       </div>
 
       <div className="mainDivSecond">
