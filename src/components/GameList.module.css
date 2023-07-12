@@ -43,11 +43,6 @@
 .gameItem h2 {
     margin-top: 5px;
     color: var(--mainTextColor);
-
-    .gameItem h2 {
-        margin-top: 5px;
-        color: var(--mainTextColor);
-    }
 }
 
 .gameItem p {
