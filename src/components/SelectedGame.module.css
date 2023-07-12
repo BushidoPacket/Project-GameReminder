@@ -1,0 +1,43 @@
+.delimiter {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: inset;
+    border-width: 1px;
+    border-color: var(--textGRcolor);
+    box-shadow: 0 0 20px 8px var(--textGRcolor);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameItem {
+    display: flex;
+    flex-flow: row;
+    color: var(--mainTextColor);
+}
+
+.gamePic {
+    height: 280px;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: solid 2px;
+    border-color: var(--mainFGcolor);
+}
+
+.properties {
+    display: block;
+    margin-left: 15px;
+    color: var(--mainTextColor);
+}

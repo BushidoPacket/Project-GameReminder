@@ -5,7 +5,7 @@ export const Game = () => {
   return (
     <div className="centeredPage">
       <LogoText />
-      <SelectedGame />;
+      <SelectedGame />
     </div>
   );
 };
