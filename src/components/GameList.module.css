@@ -1,3 +1,30 @@
+@media only screen and (max-width: 768px) {
+    .gameItem {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-inline: 0px !important;
+    }
+
+    .gameItem img {
+        height: 150px !important;
+        max-width: 110px !important;
+    }
+
+    .gameItem h2 {
+        font-size: 15px !important;
+        width: auto !important;
+    }
+
+    .gameItem p {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+}
+
 .gameList {
     display: flex;
     width: var(--mainWidth);
@@ -5,7 +32,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding-top: 50px;
 }
 

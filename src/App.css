@@ -10,6 +10,14 @@
     --searchBarFontSize: 20px;
   }
 
+  :root.dark {
+    --mainBGshadeColor: rgba(0, 0, 0, 0.8) !important;
+  }
+
+  body {
+    background-position: center !important;
+  }
+
   * {
     max-width: 100vw;
   }
