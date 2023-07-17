@@ -1,0 +1,79 @@
+{
+  "game": [
+    {
+      "01": {
+        "category": {
+          "PC": {
+            "walk": {
+              "text": "Character Movement"
+            },
+            "run": {
+              "text": "Run with character"
+            }
+          },
+          "Playstation": {
+            "fire": {
+              "text": "Weapon Fire",
+              "class": "LMB"
+            }
+          },
+          "XBOX": {
+            "Jump": {
+              "text": "Movement"
+            }
+          }
+        }
+      }
+    },
+    {
+      "02": {
+        "category": {
+          "PC": {
+            "walk": {
+              "text": "Movement"
+            }
+          },
+          "Playstation": {
+            "walk": {
+              "text": "Movement"
+            }
+          }
+        }
+      }
+    },
+    {
+      "03": {
+        "category": {
+          "PC": {
+            "wsad": {
+              "text": "Move"
+            },
+            "shift": {
+              "text": "Run"
+            },
+            "space": {
+              "text": "Jump"
+            },
+            "lmb": {
+              "text": "Attack / Hit"
+            },
+            "rmb": {
+              "text": "Place Block"
+            },
+            "q": {
+              "text": "Throw block"
+            },
+            "f": {
+              "text": "Swap hands"
+            }
+          },
+          "Playstation": {
+            "walk": {
+              "text": "Movement"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
