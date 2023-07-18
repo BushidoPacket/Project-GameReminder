@@ -23,6 +23,8 @@
 
 .gameItem {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
     flex-flow: row;
     color: var(--mainTextColor);
 }

@@ -1,12 +1,16 @@
+import React from 'react';
 import "../App.css";
 import { changeTheme } from "../theme_handler";
 
 export const LogoText = () => {
+
   return (
     <div>
       <div className="navBar">
         <div className="navBarFirst"></div>
 
+        <button id="homeButton"></button>
+        <button id="aboutMeButton"></button>
         <button id="themeButton" onClick={changeTheme}></button>
 
         <div className="navBarLast"></div>

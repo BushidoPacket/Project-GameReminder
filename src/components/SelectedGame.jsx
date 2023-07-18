@@ -19,8 +19,8 @@ export const SelectedGame = () => {
       {game.map((item) => (
         <div key={item.id} className={classes.header}>
           <div className={classes.main}> 
-            <img src={item.cover} alt={item.name} className={classes.gamePic} />
             <h3 className={classes.gameItem}>{item.name}</h3>
+            <img src={item.cover} alt={item.name} className={classes.gamePic} />
           </div>
           <div className={classes.properties}>
             <p>Platform: {item.platform}</p>

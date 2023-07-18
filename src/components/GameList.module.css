@@ -62,8 +62,7 @@
     border-color: var(--mainFGcolor);
 
     &:hover {
-        border: dashed 2px;
-        border-color: var(--mainFGcolor);
+        box-shadow: 0 0 20px 12px var(--textGRcolor);
     }
 }
 

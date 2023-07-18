@@ -138,12 +138,40 @@ body{
 }
 
 .navBar > #themeButton{
-  grid-column: 59 ;
+  grid-column: 59;
   width: 40px;
   height: 40px;
   background-image: url("../graphic/switch-icon-light.png");
   background-size: contain;
   border-radius: 50%;
+  border: 0px;
+  outline: none;
+}
+
+.navBar > #homeButton{
+  grid-column: 2;
+  width: 50px;
+  height: 40px;
+  background-size: 75% contain;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+  background-position: center;
+  background-image: url("../graphic/CarbonHome.svg");
+  border-radius: 10%;
+  border: 0px;
+  outline: none;
+}
+
+.navBar > #aboutMeButton{
+  grid-column: 4;
+  width: 50px;
+  height: 40px;
+  background-size: 75% contain;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+  background-position: center;
+  background-image: url("../graphic/CarbonInformation.svg");
+  border-radius: 10%;
   border: 0px;
   outline: none;
 }
