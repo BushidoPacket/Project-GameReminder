@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import games from "../database.json";
 import classes from "./SelectedGame.module.css";
 import info from "../info.json";
+import { Category } from "./Category";
 
 export const SelectedGame = () => {
   const [gameData, setGameData] = useState([]);
@@ -58,33 +59,12 @@ export const SelectedGame = () => {
 
               {Object.keys(categories).map((categoryKey) => {
                 return (
-                  <h1 onClick={() => setSelectedCategory(categoryKey)}>
+                  <h1 style={{ display: 'flex' }} key={categoryKey} onClick={() => setSelectedCategory(categoryKey)}>
                     {categoryKey}
                   </h1>
                 );
               })}
-
-              {Object.keys(categories).map((categoryKey) => {
-                const category = categories[categoryKey];
-                const actionClasses = Object.keys(category);
-
-                if (categoryKey === selectedCategory) {
-                  return (
-                    <div key={categoryKey}>
-                      {actionClasses.map((actionClass) => {
-                        const action = category[actionClass];
-                        return (
-                          <div key={actionClass}>
-                            <p>
-                              class({actionClass}): - {action.text}
-                            </p>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  );
-                }
-              })}
+              <Category categories={categories} game={selectedCategory} />
             </div>
           );
         })}
